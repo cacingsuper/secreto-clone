@@ -2,7 +2,6 @@ import { signIn, signOut, useSession } from 'next-auth/client'
 
 export default function Page() {
   const [ session, loading ] = useSession()
-  console.log(session?.user)
   return <>
     {!session && <>
       Not signed in <br/>
